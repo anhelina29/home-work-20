@@ -124,31 +124,22 @@ console.log(evenFn(20))
 function weekFn(n) {
     switch (n) {
         case 1:
-            console.log('Monday')
-            break;
+            return 'Monday'
         case 2:
-            console.log('Tuesday')
-            break;
+            return 'Tuesday'
         case 3:
-            console.log('Wednesday')
-            break;
+            return 'Wednesday'
         case 4:
-            console.log('Thursday')
-            break;
+            return 'Thursday'
         case 5:
-            console.log('Friday')
-            break;
+            return 'Friday'
         case 6:
-            console.log('Saturday')
-            break;
+            return 'Saturday'
         case 7:
-            console.log('Sunday')
-            break;
+            return 'Sunday'
         default:
-            console.log(null)
+            return null
     }
-
-    return n
 }
 
 console.log(weekFn(1))
@@ -298,7 +289,7 @@ function mainFunc(a, b, cb) {
 }
 
 function cbRandom(min, max) {
-    return Math.round(Math.random() * (max - min) + min)
+    return Math.floor(Math.random() * (max - min) + min)
 }
 
 
